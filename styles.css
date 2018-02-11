@@ -1,0 +1,46 @@
+ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 20;
+    background-color: rgb(191, 250, 191)
+}
+
+li a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+}
+
+li {
+    float: left;
+    display: inline;
+    margin: 2px;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: menu; }
+.item4 { grid-area: footer;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main right right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 0px;
+  background-color: rgb(190, 245, 176);
+  padding: 0px;
+}
+.grid-container > div {
+  background-color: rgb(190, 245, 176);
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+}
+
+.weatherImage {
+    float: center;
+    display: center;
+    text-align: center;
+}
