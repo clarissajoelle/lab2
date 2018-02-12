@@ -1,10 +1,10 @@
 $(document).ready(function() {
     var submitButton = $("#weatherSubmit");
-    var value = $("#weatherInput").val();
 
     $("#weatherSubmit").click(function(e) {
+        var value = $("#weatherInput").val();
         e.preventDefault();
-
+        console.log(value);
         var myurl= "http://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=28f3a0e66ccd223c0d59d7f03f706698";
         $.ajax({
             url : myurl,
